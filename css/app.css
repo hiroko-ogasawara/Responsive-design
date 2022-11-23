@@ -1,0 +1,403 @@
+@charset "utf8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height: 0.63;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*reset css end*/
+
+body {
+    color: #54514c;
+    font-family:"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+/*ここからheader*/
+header {
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+    position: fixed;
+    background-color: #ffffff;
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    top: 4px;
+}
+
+h1 img{
+    width: 100%;
+}
+
+nav {
+    display:none;
+}
+
+.hamburger-menu {
+    z-index: 200;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    padding: 20px 15px;
+}
+
+.hamburger-menu span {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666666;
+    vertical-align: top;
+}
+
+/*トップ画像*/
+
+#key_visual {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#key_visual img{
+    width: 100%;
+}
+
+
+main {
+    width: 100%;
+}
+
+.container{
+    padding:10px;
+}
+
+/*ここからinformation*/
+h2 {
+    font-size: 1.0rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+    background-color: #B99566;
+    text-indent: 1rem;
+    padding: 16px 0;
+}
+
+#information ul li {
+    font-size: 0.9rem;
+    padding: 10px;
+    line-height: 1;
+}
+
+#information ul li:nth-child(even) {
+    background-color: #F5F3F0;
+}
+
+.news_conent::before{
+    content:"▶";
+}
+
+/*ここからgourmet*/
+#gourmet article figure img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.store {
+    font-size: 1.2rem;
+    border-left: 4px solid #402805;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+.area li {
+    font-size: 0.5rem;
+    line-height: 0.5;
+    color: #FFFFFF;
+    background-color: #B99566;
+    border-radius: 3px;
+    display: inline-block;
+    padding:6px 10px;
+    margin-top: 5px;
+}
+
+.cook {
+    font-size: 0.9rem;
+    margin:10px 0 30px 20px;
+}
+
+.cook::before {
+    content:"-"
+}
+
+/*ここからfooter*/
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer ul {
+    background-color: #54514C;
+    padding: 30px 0;
+}
+
+footer ul li {
+    background-color: #54514C;
+    width: 280px;
+    border-radius: 3px;
+    margin: 7px auto;
+}
+
+footer ul li + li {
+    margin-top: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    transition: all 300ms;
+    display: block;
+    padding: 10px;
+}
+
+footer ul li a:hover {
+    color: #54514C;
+    background-color: #FFFFFF;
+}
+
+.logo img {
+    width: 160px;
+    margin: 15px;
+}
+
+.small {
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+@media (min-width: 768px){
+    header {
+        height: 80px;
+    }
+
+    header .logo {
+        top: 10px;
+        left: 15px;
+    }
+
+    header .logo img {
+        width: 250px;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        top: 21px;
+        right: 0px;
+    }
+
+    nav ul li {
+        text-align: center;
+        display: inline-block;
+}
+
+    nav a {
+        width: 124px;
+        height: 35px;
+        line-height: 35px;
+        color:#9c9b98;
+        text-decoration: none;
+        display: block;
+        border-radius: 2px;
+        transition: 300ms;
+    }
+
+    nav a:hover {
+        color: #FFFFFF;
+        background-color: #B99566;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        font-weight: border;
+    }
+
+    #information {
+        margin-bottom: 50px;
+    }
+
+    #information ul{
+        list-style: none;
+    }
+
+    #information p {
+        display: inline-block;
+    }
+
+    .news_conent::before {
+        padding: 10px
+    }
+
+    .container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:55px;
+    }
+
+    article {
+        width: calc(50% - 5px);
+    }
+
+    .store {
+        padding: 10px 10px;
+    }
+
+    .area li {
+        font-size: 0.8rem;
+        line-height: 0.5;
+        padding: 8px 10px;
+    }
+
+    .cook {
+        font-size: 1.1rem;
+        margin: 0 0 20px 7px;
+    }
+
+    footer ul{
+        padding: 20px 0;
+    }
+
+    footer ul li {
+        display: inline-block;
+        width: 120px;
+        margin: 0 2px 2px;
+    }
+
+    footer ul li + li {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .logo img {
+        width: 200px;
+        margin: 15px;
+}
+}
+
+@media (min-width:1000px){
+    .container {
+        padding: 10px 0;
+    }
+}
